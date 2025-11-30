@@ -24,17 +24,46 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <nav className="w-full bg-blue-700 dark:bg-blue-900 text-white px-6 py-3 flex items-center justify-between shadow">
-          <div className="font-bold text-xl">
-            <a href="/">DataFlow</a>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-50 dark:bg-black`}> 
+        {/* Header */}
+        <header className="sticky top-0 z-50 w-full bg-black text-white shadow-lg">
+          <div className="container mx-auto flex items-center justify-between px-6 py-4">
+            <a href="/" className="flex items-center gap-2">
+              {/* Logo image can be added here */}
+              <h1 className="text-2xl font-bold tracking-tight">DataFlow</h1>
+            </a>
+            <nav className="hidden md:flex gap-8 text-base font-medium">
+              <a href="/" className="hover:text-blue-400 transition">Home</a>
+              <a href="/about" className="hover:text-blue-400 transition">About</a>
+              <a href="/projects" className="hover:text-blue-400 transition">Projects</a>
+              <a href="/auth" className="hover:text-blue-400 transition">Sign In / Sign Up</a>
+              <a href="/contact" className="hover:text-blue-400 transition">Contact</a>
+            </nav>
+            {/* Mobile nav toggle (not functional, for demo) */}
+            <button className="md:hidden text-2xl" aria-label="Open navigation">
+              <span className="material-icons">menu</span>
+            </button>
           </div>
-          <div className="flex gap-6 text-base font-medium">
-            <a href="/projects" className="hover:underline">Projects</a>
-            <a href="/auth" className="hover:underline">Sign In / Sign Up</a>
+        </header>
+        {/* Main content */}
+        <main className="min-h-[80vh] container mx-auto pt-8 pb-16 px-4">{children}</main>
+        {/* Footer */}
+        <footer className="w-full bg-black text-white py-8 mt-8">
+          <div className="container mx-auto px-6 flex flex-col items-center">
+            <div className="text-center mb-4">
+              <p>© <span>Copyright</span> <strong className="px-1">DataFlow</strong> <span>All Rights Reserved</span></p>
+            </div>
+            <div className="flex gap-4 mb-4">
+              <a href="#" className="hover:text-blue-400"><i className="bi bi-twitter-x text-xl"></i></a>
+              <a href="#" className="hover:text-blue-400"><i className="bi bi-facebook text-xl"></i></a>
+              <a href="#" className="hover:text-blue-400"><i className="bi bi-instagram text-xl"></i></a>
+              <a href="#" className="hover:text-blue-400"><i className="bi bi-linkedin text-xl"></i></a>
+            </div>
+            <div className="text-xs text-center">
+              Designed by <a href="https://bootstrapmade.com/" className="underline">BootstrapMade</a>
+            </div>
           </div>
-        </nav>
-        <div className="pt-6">{children}</div>
+        </footer>
       </body>
     </html>
   );
