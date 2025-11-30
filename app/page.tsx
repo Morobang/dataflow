@@ -1,3 +1,106 @@
+                                          {/* Final CTA Section */}
+                                          <section className="w-full max-w-2xl mx-auto py-12 px-4 text-center">
+                                            <h2 className="text-3xl font-bold mb-4 text-blue-700 dark:text-blue-300">Stop Struggling, Start Building</h2>
+                                            <p className="text-lg text-zinc-700 dark:text-zinc-300 mb-6">Join thousands of data professionals shipping better projects, faster</p>
+                                            <form className="cta-combo flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
+                                              <input type="email" placeholder="Enter your email..." className="px-4 py-2 rounded border border-zinc-300 dark:border-zinc-700 w-full sm:w-2/3" />
+                                              <button type="submit" className="cta-primary bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold">Start Free Trial →</button>
+                                            </form>
+                                            <div className="guarantee text-xs text-zinc-500 dark:text-zinc-400">
+                                              <span>✓ No credit card required • 14-day free trial • Cancel anytime</span>
+                                            </div>
+                                          </section>
+                                    {/* FAQ Section */}
+                                    <section className="w-full max-w-4xl mx-auto py-12 px-4">
+                                      <h2 className="text-3xl font-bold text-center mb-8 text-zinc-900 dark:text-zinc-100">Frequently Asked Questions</h2>
+                                      <div className="faq-grid grid grid-cols-1 md:grid-cols-3 gap-8">
+                                        <div className="faq-item bg-white dark:bg-zinc-800 p-6 rounded-lg shadow">
+                                          <h4 className="font-semibold text-lg mb-2">What tools does DataFlow work with?</h4>
+                                          <p className="text-zinc-600 dark:text-zinc-300">We're tool-agnostic! Whether you use Excel, SQL, Python, R, Power BI, Tableau, or any data tool - our workflows adapt to your stack.</p>
+                                        </div>
+                                        <div className="faq-item bg-white dark:bg-zinc-800 p-6 rounded-lg shadow">
+                                          <h4 className="font-semibold text-lg mb-2">I'm a complete beginner. Is this for me?</h4>
+                                          <p className="text-zinc-600 dark:text-zinc-300">Absolutely! Our guided approach is perfect for beginners. You'll learn the right skills in the right order while building real projects.</p>
+                                        </div>
+                                        <div className="faq-item bg-white dark:bg-zinc-800 p-6 rounded-lg shadow">
+                                          <h4 className="font-semibold text-lg mb-2">Can I use my own projects?</h4>
+                                          <p className="text-zinc-600 dark:text-zinc-300">Yes! Start with our templates or create completely custom projects. The guidance adapts to your specific use case.</p>
+                                        </div>
+                                      </div>
+                                    </section>
+                              {/* Pricing Section */}
+                              <section className="w-full max-w-4xl mx-auto py-12 px-4">
+                                <h2 className="text-3xl font-bold text-center mb-8 text-zinc-900 dark:text-zinc-100">Pricing</h2>
+                                <div className="pricing-grid grid grid-cols-1 md:grid-cols-3 gap-8">
+                                  <div className="pricing-card bg-white dark:bg-zinc-800 p-6 rounded-lg shadow flex flex-col items-center text-center">
+                                    <h4 className="font-semibold text-lg mb-2">Starter</h4>
+                                    <div className="price text-2xl font-bold mb-2">Free</div>
+                                    <ul className="text-zinc-600 dark:text-zinc-300 mb-4 text-left list-disc list-inside">
+                                      <li>✓ 3 Project Templates</li>
+                                      <li>✓ Basic Progress Tracking</li>
+                                      <li>✓ Community Access</li>
+                                      <li>✗ Advanced Learning</li>
+                                      <li>✗ Portfolio Export</li>
+                                    </ul>
+                                    <button className="pricing-cta bg-blue-600 text-white px-6 py-2 rounded font-semibold">Get Started</button>
+                                  </div>
+                                  <div className="pricing-card featured bg-blue-100 dark:bg-blue-900 p-6 rounded-lg shadow flex flex-col items-center text-center border-2 border-blue-600 dark:border-blue-300 relative">
+                                    <div className="popular-badge absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded font-bold text-xs">MOST POPULAR</div>
+                                    <h4 className="font-semibold text-lg mb-2">Professional</h4>
+                                    <div className="price text-2xl font-bold mb-2">$15<span className="text-base font-normal">/month</span></div>
+                                    <ul className="text-zinc-600 dark:text-zinc-300 mb-4 text-left list-disc list-inside">
+                                      <li>✓ All Project Templates</li>
+                                      <li>✓ Advanced Skill Tracking</li>
+                                      <li>✓ Context-Aware Learning</li>
+                                      <li>✓ Portfolio Builder</li>
+                                      <li>✓ Priority Support</li>
+                                    </ul>
+                                    <button className="pricing-cta featured bg-blue-600 text-white px-6 py-2 rounded font-semibold">Start Free Trial</button>
+                                  </div>
+                                  <div className="pricing-card bg-white dark:bg-zinc-800 p-6 rounded-lg shadow flex flex-col items-center text-center">
+                                    <h4 className="font-semibold text-lg mb-2">Teams</h4>
+                                    <div className="price text-2xl font-bold mb-2">$30<span className="text-base font-normal">/user/month</span></div>
+                                    <ul className="text-zinc-600 dark:text-zinc-300 mb-4 text-left list-disc list-inside">
+                                      <li>✓ Everything in Professional</li>
+                                      <li>✓ Team Analytics</li>
+                                      <li>✓ Custom Templates</li>
+                                      <li>✓ Admin Controls</li>
+                                      <li>✓ SSO & Security</li>
+                                    </ul>
+                                    <button className="pricing-cta bg-blue-600 text-white px-6 py-2 rounded font-semibold">Contact Sales</button>
+                                  </div>
+                                </div>
+                              </section>
+                        {/* Results & Social Proof Section */}
+                        <section className="w-full max-w-4xl mx-auto py-12 px-4">
+                          <h2 className="text-3xl font-bold text-center mb-8 text-zinc-900 dark:text-zinc-100">Real Results, Real Users</h2>
+                          <div className="results-section grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                            <div className="stat bg-white dark:bg-zinc-800 p-6 rounded-lg shadow flex flex-col items-center text-center">
+                              <div className="number text-4xl font-bold text-blue-600 dark:text-blue-300 mb-2">63%</div>
+                              <p className="text-zinc-600 dark:text-zinc-300">Faster project completion</p>
+                            </div>
+                            <div className="stat bg-white dark:bg-zinc-800 p-6 rounded-lg shadow flex flex-col items-center text-center">
+                              <div className="number text-4xl font-bold text-blue-600 dark:text-blue-300 mb-2">2.4x</div>
+                              <p className="text-zinc-600 dark:text-zinc-300">More skills gained per project</p>
+                            </div>
+                            <div className="stat bg-white dark:bg-zinc-800 p-6 rounded-lg shadow flex flex-col items-center text-center">
+                              <div className="number text-4xl font-bold text-blue-600 dark:text-blue-300 mb-2">89%</div>
+                              <p className="text-zinc-600 dark:text-zinc-300">Feel more confident in abilities</p>
+                            </div>
+                          </div>
+                          <div className="testimonials flex flex-col items-center">
+                            <div className="testimonial-card bg-blue-50 dark:bg-zinc-800 p-6 rounded-lg shadow flex flex-col md:flex-row items-center gap-6 max-w-2xl">
+                              <div className="quote text-lg italic text-zinc-800 dark:text-zinc-200 mb-4 md:mb-0">"I went from SQL beginner to building production ETL pipelines in 3 months. DataFlow gave me the structure I needed."</div>
+                              <div className="author flex items-center gap-4">
+                                <img src="/avatar.jpg" alt="Sarah Chen" className="w-12 h-12 rounded-full border-2 border-blue-600 dark:border-blue-300" />
+                                <div>
+                                  <strong className="block text-blue-700 dark:text-blue-200">Sarah Chen</strong>
+                                  <span className="text-xs text-zinc-600 dark:text-zinc-300">Data Analyst → Data Engineer</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
                   {/* User Journey Visualization Section */}
                   <section className="w-full max-w-4xl mx-auto py-12 px-4">
                     <h2 className="text-3xl font-bold text-center mb-8 text-zinc-900 dark:text-zinc-100">How DataFlow Works</h2>

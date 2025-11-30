@@ -59,9 +59,6 @@ export default function RootLayout({
               <a href="#" className="hover:text-blue-400"><i className="bi bi-instagram text-xl"></i></a>
               <a href="#" className="hover:text-blue-400"><i className="bi bi-linkedin text-xl"></i></a>
             </div>
-            <div className="text-xs text-center">
-              Designed by <a href="https://bootstrapmade.com/" className="underline">BootstrapMade</a>
-            </div>
           </div>
         </footer>
       </body>
