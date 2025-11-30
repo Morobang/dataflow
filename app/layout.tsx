@@ -24,10 +24,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <nav className="w-full bg-blue-700 dark:bg-blue-900 text-white px-6 py-3 flex items-center justify-between shadow">
+          <div className="font-bold text-xl">
+            <a href="/">DataFlow</a>
+          </div>
+          <div className="flex gap-6 text-base font-medium">
+            <a href="/projects" className="hover:underline">Projects</a>
+            <a href="/auth" className="hover:underline">Sign In / Sign Up</a>
+          </div>
+        </nav>
+        <div className="pt-6">{children}</div>
       </body>
     </html>
   );

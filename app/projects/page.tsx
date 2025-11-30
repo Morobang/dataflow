@@ -105,9 +105,11 @@ export default function ProjectsPage() {
         )}
         {projects.map((project: any) => (
           <li key={project.id} className="mb-4 p-4 border rounded bg-zinc-50 dark:bg-zinc-800">
-            <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-200">{project.name}</h3>
-            <p className="text-zinc-700 dark:text-zinc-300">{project.description}</p>
-            <span className="text-xs text-zinc-500 dark:text-zinc-400">Created: {new Date(project.created_at).toLocaleString()}</span>
+            <a href={`/projects/${project.id}`} className="block">
+              <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-200 hover:underline">{project.name}</h3>
+              <p className="text-zinc-700 dark:text-zinc-300">{project.description}</p>
+              <span className="text-xs text-zinc-500 dark:text-zinc-400">Created: {new Date(project.created_at).toLocaleString()}</span>
+            </a>
           </li>
         ))}
       </ul>
